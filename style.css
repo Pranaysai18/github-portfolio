@@ -1,0 +1,372 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black; 
+    background: #f4f4f4; 
+    padding-top: 60px; 
+    font-size: 20px;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #dee5ec;
+}
+
+.profile-photo {
+    border-radius: 10%;
+    width: 200px; 
+    height: 200px;
+    border: 5px solid #fff; 
+    box-shadow: 0 4px 8px rgba(68, 134, 52, 0.3);
+}
+
+nav {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background: royalblue; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+    padding: 10px 1px; 
+    font-size: 20px;  ;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(12, 12, 12); 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 40px 20px;
+}
+
+#home {
+    background: #f4f4f4;
+    color: black; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: black; 
+}
+
+#home p {
+    font-size:  1.5em;
+    color: black; 
+    margin-bottom: 5px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+#skills .card {
+    background: #fff; 
+    border-radius: 30px;
+    padding: 30px;
+    margin: 15px; 
+    box-shadow: 0 4px 8px rgba(89, 202, 95, 0.3);
+    color: #092643; 
+    float: left;
+    font-size: 40px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #003366; 
+}
+
+#projects .card {
+    background: #fff; 
+    border-radius: 30px;
+    padding: 50px;
+    margin: 15px; 
+    box-shadow: 0 4px 8px rgba(81, 166, 62, 0.3);
+    color: #0a0a0a;
+    float: left;
+}
+
+#skills .card,
+#projects .card {
+    flex: 1 1 calc(50% - 30px); 
+}
+
+footer p {
+    margin: 0;
+    color: #003366; 
+}
+
+.horizontal-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.horizontal-container .card {
+    flex: 0 0 auto; 
+    margin: 10px;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    background-color: #fff; 
+    border-radius: 30px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: rgba(72, 209, 118, 0.541) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: all 0.3s ease;
+    padding: 40px;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px 0px;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #003366; 
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #003366;
+    line-height: 1.5;
+}
+
+#contact {
+    background: #f4f4f4; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(5, 5, 5); 
+}
+
+.contact-info {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info .contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: royalblue; 
+    font-size: 1.2em;
+    transition: color 0.5s ease, transform 0.5s ease;
+    box-shadow: #14a5b8;
+}
+
+.contact-info .contact-icon i {
+    margin-right: 10px;
+}
+
+.contact-info .contact-icon:hover {
+    color: #14a5b8; 
+    transform: scale(1.1);
+}
+
+#certificates {
+    padding: 40px 20px;
+    color: #070707; 
+}
+
+#certificates h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #171717; 
+}
+
+#certificates .card {
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: #fff; 
+    position: relative;
+    box-shadow: 0px 7px 10px rgba(79, 155, 85, 0.5);
+    margin: 15px;
+    float: left; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certificates .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); 
+}
+
+#certificates .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+#certificates .card .info {
+    position: relative;
+    z-index: 1;
+    color: #003366; 
+    padding: 20px;
+    background: rgb(255, 255, 255); 
+    border-radius: 15px;
+}
+
+#certificates .card .info h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#certificates .card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#projects {
+    padding: 40px 20px; 
+    color: #000000; 
+    font-size: 20px;
+}
+
+#projects .card {
+    width: calc(50% - 30px); 
+    margin: 15px; 
+    float: left; 
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 20px; 
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav {
+        padding: 10px; 
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1px;
+
+    }
+
+    .about-me .photo {
+        margin: 0 0 20px 0;
+    }
+
+    .about-me .text {
+        flex:none;
+        font-size: 25px;
+        font-display: block;
+        gap: 10px;
+        font-style: times new roman;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-info .contact-icon {
+        font-size: 1.2em;
+    }
+
+    #skills .card,
+    #projects .card {
+        flex: 1 1 100%; 
+        margin: 10px 0;
+        font-size: 30px;
+    }
+
+    #certificates .card {
+        flex: 1 1 100%; 
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #projects .card {
+        width: calc(100% - 20px); 
+        float: none; 
+    }
+}
